@@ -1,133 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Form Pendaftaran</title>
-        <meta name="author" content="Alif Ridwan Pahlefi">
-    </head>
-    <body>
-    <h2>Form Pendaftaran</h2>
-    <table>
-        <tr>
-            <td valign="top">
-                <form action="" method="GET">
-                    <fieldset>
-                        <legend>Formulir Pendaftaran</legend>
-                        <table>
-                            <tr>
-                                <td><label>Nama: </label></td>
-                                <td><input type="text" name="nama" placeholder="Input Nama" required> <br></td>
-                            </tr>
-                            
-                            <tr>
-                                <td><label>NIM: </label></td>
-                                <td><input type="number" name="nim"> <br></td>
-                            </tr>
-							
-                            <tr>
-                                <td><label>Email: </label></td>
-                                <td><input type="email" name="email"> <br></td>
-                            </tr>
-
-                            <tr>
-                                <td><label>Tanggal Lahir: </label></td>
-                                <td><input type="date" name="date"> <br></td>
-                            </tr>
-
-                            <tr>
-                                <td><label>Jenis Kelamin: </label></td>
-                                <td>
-                                    <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
-                                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td><label>Agama: </label></td>
-                                <td>
-                                <select name="Agama" required>
-                                    <option>Pilih Agama</option>
-                                    <option value="is">Islam</option>
-                                    <option value="kr">Kristen</option>
-                                    <option value="bu">Budha</option>
-                                    <option value="ko">Konghucu</option>
-                                </select>
-                                </td>
-                            </tr>
+	<head>
+		<title>FORM PENDAFTARAN</title>
+		<meta name="author" content="Alif Ridwan Pahlefi">
+	</head>
+	<body>
+	
+	<h2>Form Pendaftaran</h2>
+	<form action="" method="GET">
+	<table width="100%">
+		<td width="50%">
+			<fieldset>
+			<legend>Data Pribadi</legend>
+			<table cellpadding="5">
 				<tr>
-				<td><label>Pendidikan Terakhir</label></td>
-				<td>: <input type="radio" name="jk" value="sma">SMA
-					<input type="radio" name="jk" value="d3">D3
-					<input type="radio" name="jk" value="s1">S1
-				</td>
+					<td><label>Nama Lengkap</label></td>
+					<td>: <input type="text" name="nama" id="id_nama" placeholder="input nama" required autofocus> 	</td>
 				</tr>
-                            <tr>
-                                <td><label>Pas Foto: </label></td>
-                                <td><input type="file" name="foto" accept="image/jpeg"></td>
-                            </tr>
-
-                            <tr>
-                                <td><label>CV: </label></td>
-                                <td><input type="file" name="cv" accept=".pdf,.doc,.docx"></td>
-                            </tr>
-
-                            <tr>
-                                <td><label>Alamat Lengkap:</label></td>
-                                <td>:
-                                    <textarea name="alamat" rows="5"></textarea>
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </form>
-            </td>
-            <td valign="top">
-                <form action="" method="GET">
-                    <fieldset>
-                        <legend>Data Orang Tua</legend>
-                        <table>
-                            <tr>
-                                <td><label>Nama Ayah: </label></td>
-                                <td><input type="text" name="nama_ayah" placeholder="Nama Ayah" required></td>
-                            </tr>
-                            <tr>
-                                <td><label>Pekerjaan Ayah: </label></td>
-                                <td><input type="text" name="pekerjaan_ayah" placeholder="Pekerjaan Ayah" required></td>
-                            </tr>
-                            <tr>
-                                <td><label>Alamat Ayah: </label></td>
-                                <td><textarea name="alamat_ayah" rows="3" placeholder="Alamat Ayah"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><label>No Telepon Ayah: </label></td>
-                                <td><input type="text" name="no_telepon_ayah" placeholder="No Telepon Ayah" required></td>
-                            </tr>
-                            <tr>
-                                <td><label>Nama Ibu: </label></td>
-                                <td><input type="text" name="nama_ibu" placeholder="Nama Ibu" required></td>
-                            </tr>
-                            <tr>
-                                <td><label>Pekerjaan Ibu: </label></td>
-                                <td><input type="text" name="pekerjaan_ibu" placeholder="Pekerjaan Ibu" required></td>
-                            </tr>
-                            <tr>
-                                <td><label>Alamat Ibu: </label></td>
-                                <td><textarea name="alamat_ibu" rows="3" placeholder="Alamat Ibu"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><label>No Telepon Ibu: </label></td>
-                                <td><input type="text" name="no_telepon_ibu" placeholder="No Telepon Ibu" required></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <input type="submit" value="Kirim">
-                                    <input type="reset">
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </form>
-            </td>
-        </tr>
-    </table>
-    </body>
+				<tr>
+					<td><label>Email</label></td>
+					<td>: <input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label>Nomor Telepon</label></td>
+					<td>: <input type="tel" name="telsaya"></td>
+				</tr>
+				<tr>
+					<td><label>Alamat Lengkap</label></td>
+					<td valign="middle">: 
+						<textarea name="alamat" rows="8" cols="35"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Tanggal Lahir</label></td>
+					<td>: <input type="date" name="tgl-lahir"></td>
+				</tr>
+				<tr>
+					<td><label>Jenis Kelamin</label></td>
+					<td>: <input type="radio" name="jk" value="L">Laki-laki
+						<input type="radio" name="jk" value="P">Perempuan
+					</td>
+				</tr>
+				<tr>
+					<td><label>Agama</label></td>
+					<td>: 
+					<select name="prodi" required>
+						<option value="">Pilih Agama</option>
+							<option value="islam">Islam</option>
+							<option value="Kristen">Kristen</option>
+							<option value="buddha">buddha</option>
+							<option value="hindu">Hindu</option>
+						</select>
+				</tr>
+				<tr>
+					<td><label>Pendidikan Terakhir</label></td>
+					<td>: <input type="radio" name="pt" value="sma">SMA
+						<input type="radio" name="pt" value="d3">D3
+						<input type="radio" name="pt" value="s1">S1
+					</td>
+				</tr>
+				<tr>
+					<td><label>Foto</label></td>
+					<td>: <input type="file" name="foto" accept="image/*"></td>
+				</tr>
+				<tr>
+					<td><label>CV</label></td>
+					<td>: <input type="file" name="cv" accept=".pdf"></td>
+				</tr>
+			</fieldset>
+			</table>
+		</td>
+		<td width="50%" valign="top">
+			<fieldset>
+			<legend>Data Orang Tua</legend>
+			<table cellpadding="5">
+				<tr>
+					<td><label>Nama Ayah</label></td>
+					<td>: <input type="text" name="nama" id="id_nama"></td>
+				</tr>
+				<tr>
+					<td><label>Pekerjaan Ayah</label></td>
+					<td>: <input type="text" name="pekerjaan" id="id_pekerjaan"></td>
+				</tr>
+				<tr>
+					<td><label>Alamat Ayah</label></td>
+					<td valign="middle">: <textarea name="alamat" rows="5" cols="20"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Nomor Telepon Ayah</label></td>
+					<td>: <input type="tel" name="telayah"></td>
+				</tr>
+				<tr>
+					<td><label>Nama Ibu</label></td>
+					<td>: <input type="text" name="namaibu" id="id_nama"></td>
+				</tr>
+				<tr>
+					<td><label>Pekerjaan Ibu</label></td>
+					<td>: <input type="text" name="perkerjaanibu" id="id_pekerjaanibu"></td>
+				</tr>
+				<tr>
+					<td><label>Alamat Ibu</label></td>
+					<td valign="middle">: <textarea name="alamat" rows="5" cols="20"></textarea></td>
+				</tr>
+				<tr>
+					<td><label>Nomor Ibu</label></td>
+					<td>: <input type="tel" name="telibu"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<input type="submit" value="Simpan">
+					<input type="reset" value="Reset">
+					</td>
+				</tr>
+			</table>
+			</fieldset>
+		</td>
+	</table>
+	
+	
+	</body>
 </html>
